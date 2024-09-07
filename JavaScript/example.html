@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Click the button to recieve the time </p>
+    <button onclick="fnc()">Time</button>
+    <p id="hello"></p>
+    <p id="hallo"></p>
+
+    <script>
+        function fnc() {
+            var greetings;
+            var time = new Date().getHours();
+
+            if (time < 12) {
+                greetings="good morning";
+            }
+
+            else if (time < 16) {
+                greetings="good aternoon";
+            }
+
+            else {
+                greetings = "good evening";
+            }
+
+        
+
+        document.getElementById("hello").innerHTML = "The current hour is "
+        + time;
+
+        document.getElementById("hallo").innerHTML = greetings;
+        }
+
+    </script>
+
+</body>
+
+</html>
