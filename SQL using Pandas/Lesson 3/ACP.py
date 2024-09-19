@@ -5,7 +5,6 @@ print('Opened data successfully')
 
 import pandas as pd
 
-tables = pd.read_sql("""SELECT DISTINCT  
-                    FROM sqlite_master
-                    WHERE type='table';""", conn)
+tables = pd.read_sql("""SELECT DISTINCT(Man_of_the_Match)  
+                    FROM Match;""", conn)
 print(tables)
