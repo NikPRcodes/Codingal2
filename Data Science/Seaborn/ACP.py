@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from google.colab import drive
+#from google.colab import drive
 drive.mount('/content/drive/')
 
 df=pd.read_csv("/content/drive/MyDrive/tips.csv")

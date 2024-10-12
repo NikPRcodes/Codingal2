@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication using functions</title>
+</head>
+<body>
+    
+   <p id="para1"></p>
+   <p id="para2"></p>
+   <button onclick="Multiply(5)">Click Me!!!</button>
+
+<script>
+
+    function Multiply(a,b) {
+        if(b==undefined) {
+            b=10;
+            document.getElementById("para1").innerHTML = a+" X "+b + " = ";
+        }    
+        var p = a*b ;
+        document.getElementById("para2").innerHTML = p;
+    }
+   
+</script>
+
+</body>  
+</html>

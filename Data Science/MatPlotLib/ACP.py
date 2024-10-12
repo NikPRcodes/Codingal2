@@ -2,10 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from google.colab import drive
-drive.mount('/content/drive/')
-
-train=pd.read_csv("/content/company_sales_data.csv")
+train=pd.read_csv("company_sales_data.csv")
 
 print(train)
 
