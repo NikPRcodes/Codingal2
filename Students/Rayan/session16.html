@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+
+<body>
+    <h1><i><u>Static method in a Class</u></i></h1>
+    <p id="para1"></p>
+    <p id="para2"></p>
+
+    <script>
+        class student {
+            constructor(name, age) {
+                this.name = name;
+                this.age = age;
+            }
+
+            static hello() {
+                return "hello";
+            }
+            Present() {
+                return "My name is" + this.name;
+            }
+        }
+
+        class Grade extends student {
+            constructor(name, grade) {
+                super(name);
+                this.grade = grade;
+            }
+            show() {
+                return this.Present() + ' from ' + this.grade
+            }
+        }
+        let Student1 = new Grade("Rayan", "Grade 8");
+        document.getElementById("para1").innerHTML = Student1.show();
+        document.getElementById("para2").innerHTML = student.hello();
+    </script>
+</body>
+
+</html>

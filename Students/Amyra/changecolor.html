@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Make Changes To The Text
+    </title>
+    <style>
+        #myElement {
+
+            width: 800px;
+            height: 100px;
+            text-align: center;
+            margin: 10px;
+            font-size: x-large;
+            color: pink;
+        }
+    </style>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1 style="color:hotpink" ; id="myElement1"> Change The Font Colour Of HTML Element in JavaScript </h1>
+    <br>
+    <button type="button" onclick="changeBold()">Click Me!</button>
+    <button type="button" onclick="reverseBold()">Reverse the transformation!</button>
+    <div id="myElement"> <b>Hello World!</b></div>
+    <br>
+    <button type="button" onclick="changeStyle()">Click Me!</button>
+    <button type="button" onclick="reverseStyle()">Reverse the transformation!</button>
+    <script>
+        function changeStyle() {
+            var element = document.getElementById("myElement");
+            element.style.color = "#2b8990";
+        }
+
+        function reverseStyle() {
+            var element = document.getElementById("myElement");
+            element.style.color = "pink";
+        }
+
+        function changeBold() {
+            var element = document.getElementById("myElement1");
+            element.style.color = "turquoise";
+        }
+
+        function reverseBold() {
+            var element = document.getElementById("myElement1");
+            element.style.color = "hotpink";
+        }
+
+
+    </script>
+</body>
+
+</html>
