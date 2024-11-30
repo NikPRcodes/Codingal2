@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Slider in Website
+    </title>
+</head>
+
+<body>
+    <center>
+        <section>
+            <img src="food1.png" class="myImages" height="300">
+            <img src="food2.png" class="myImages" height="300">
+            <img src="food3.png" class="myImages" height="300">
+            <img src="food4.png" class="myImages" height="300">
+            <img src="food5.png" class="myImages" height="300">
+        </section>
+    </center>
+
+    <script>
+        var i;
+        var index = 0;
+        carousel();
+        function carousel() {
+            var x = document.getElementsByClassName("myImages");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            index++;
+            if (index > x.length) {
+                index = 1;
+            }
+
+            x[index - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>

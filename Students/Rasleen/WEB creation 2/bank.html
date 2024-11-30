@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank App</title>
+    <link rel="stylesheet" href="bank.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text3">Bank App</h2>
+        <input type="number" id="transactionAmount" placeholder="Enter amount">
+        <div>
+            <button class="credit" onclick="credit()">Credit</button>
+            <button class="debit" onclick="debit()">Debit</button>
+        </div>
+        <p id="balance">Your Account Balance is: Rs. 0</p>
+        <p id="expenditure">Your Total Expenditure is: Rs. 0</p>
+    </div>
+    <script src="bank.js"></script>
+</body>
+
+</html>
